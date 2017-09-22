@@ -26,6 +26,14 @@
     <%= form.number_field :prepare_time, id: :plate_prepare_time %>
   </div>
 
+  <div class="field">
+    <%= 'ingredients' %>
+    <% Ingredient.all.each do |ingredient| %>
+      <%= check_box_tag "plate[ingredient_ids][]", ingredient.id, @plate.ingredients.include?(ingredient) %>
+      <%= ingredient.description %>
+    <% end %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
