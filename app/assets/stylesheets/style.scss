@@ -59,3 +59,24 @@ section {
 #plates {
   width: 700px;
 }
+
+table {
+  position: relative;
+  width: 750px;
+}
+
+th, td {
+  border-bottom: 2px solid #000000;
+  padding: 10px;
+  text-align: left;
+}
+
+td {
+  border-bottom-width: 1px;
+}
+
+th.btn,
+td.btn {
+  text-align: center;
+  width: 160px;
+}
