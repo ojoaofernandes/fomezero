@@ -1,8 +1,8 @@
 <nav>
-  <a class="brand" href="#">Fomezero</a>
+  <%= link_to 'FomeZero', root_path, class: 'brand' %>
   <ul class="menu right">
     <li class="menu-item">
-      <a class="menu-item-link" href="/restaurants">Management</a>
+      <%= link_to 'Management', restaurants_path, class: 'menu-item-link' %>
     </li>
   </ul>
 </nav>
