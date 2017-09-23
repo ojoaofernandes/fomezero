@@ -1,0 +1,22 @@
+<hr>
+
+<div class="plates-item">
+  <h3 class="strong">
+    #<%= index + 1 %> <%= plate.description %>
+  </h3>
+  <p>
+    <span class="strong">Prepare time:</span>
+    <%= plate.prepare_time %> minutes
+  </p>
+  <p>
+    <span class="strong">Price:</span>
+    <%= plate.price %>$
+  </p>
+
+  <h4>Ingredients:</h4>
+  <span>
+    <% plate.ingredients.each do | ingredient | %>
+    - <%= ingredient.description %>
+    <% end %>
+  </span>
+</div>

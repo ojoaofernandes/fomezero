@@ -1,0 +1,7 @@
+<section id="plates">
+  <h2>Menu</h2>
+
+  <% @plates.each_with_index do | plate, index | %>
+    <%= render 'plate_item', plate: plate, index: index %>
+  <% end %>
+</section>
