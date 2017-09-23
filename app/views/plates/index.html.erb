@@ -24,9 +24,11 @@
       <td><%= plate.price %></td>
       <td><%= plate.prepare_time %> min</td>
       <td>
-        <% plate.ingredients.each do | ingredient | %>
-        <p>- <%= ingredient.description %></p>
-        <% end %>
+        <ul>
+          <% plate.ingredients.each do | ingredient | %>
+            <li><%= ingredient.description %></li>
+          <% end %>
+        </ul>
       </td>
       <td class="actions">
         <%= link_to 'Show', plate %>

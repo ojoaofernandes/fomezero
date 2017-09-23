@@ -1,18 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @plate.description %>
-</p>
+<h1><%= @plate.description %></h1>
 
 <p>
   <strong>Price:</strong>
-  <%= @plate.price %>
+  <%= @plate.price %>$
 </p>
 
 <p>
   <strong>Prepare time:</strong>
-  <%= @plate.prepare_time %>
+  <%= @plate.prepare_time %> minutes
 </p>
+
+<div>
+  <strong>Ingredients:</strong>
+  <ul>
+    <% @plate.ingredients.each do | ingredient | %>
+      <li><%= ingredient.description %></li>
+    <% end %>
+  </ul>
+</div>
 
 <%= link_to 'Edit', edit_plate_path(@plate) %>

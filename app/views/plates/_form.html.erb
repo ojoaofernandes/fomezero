@@ -12,25 +12,29 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :description %>
+    <strong><%= form.label :description %></strong>
     <%= form.text_field :description, id: :plate_description %>
   </div>
 
   <div class="field">
-    <%= form.label :price %>
+    <strong><%= form.label :price %></strong>
     <%= form.text_field :price, id: :plate_price %>
   </div>
 
   <div class="field">
-    <%= form.label :prepare_time %>
+    <strong><%= form.label :prepare_time %></strong>
     <%= form.number_field :prepare_time, id: :plate_prepare_time %>
   </div>
 
   <div class="field">
-    <%= 'ingredients' %>
+    <strong>Ingredients</strong>
     <% Ingredient.all.each do |ingredient| %>
-      <%= check_box_tag "plate[ingredient_ids][]", ingredient.id, @plate.ingredients.include?(ingredient) %>
-      <%= ingredient.description %>
+      <ul>
+        <li>
+          <%= check_box_tag "plate[ingredient_ids][]", ingredient.id, @plate.ingredients.include?(ingredient) %>
+          <%= ingredient.description %>
+        </li>
+      </ul>
     <% end %>
   </div>
 
