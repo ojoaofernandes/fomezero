@@ -10,7 +10,7 @@
   <thead>
     <tr>
       <th>Description</th>
-      <th class="btn">Actions</th>
+      <th class="actions">Actions</th>
     </tr>
   </thead>
 
@@ -18,7 +18,7 @@
     <% @ingredients.each do |ingredient| %>
     <tr>
       <td><%= ingredient.description %></td>
-      <td class="btn">
+      <td class="actions">
         <%= link_to 'Show', ingredient %>
         <%= link_to 'Edit', edit_ingredient_path(ingredient) %>
         <%= link_to 'Destroy', ingredient, method: :delete, data: { confirm: 'Are you sure?' } %>

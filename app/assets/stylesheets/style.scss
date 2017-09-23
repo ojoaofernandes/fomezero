@@ -75,8 +75,28 @@ td {
   border-bottom-width: 1px;
 }
 
-th.btn,
-td.btn {
+th.actions,
+td.actions {
   text-align: center;
   width: 160px;
+}
+
+section a {
+  background-color: transparent;
+  color: #BC2026;
+  display: inline-block;
+  text-decoration: none;
+}
+
+section a:focus,
+section a:visited {
+  background-color: transparent;
+  color: #BC2026;
+  text-decoration: none;
+}
+
+section a:hover {
+  background-color: transparent;
+  color: #282828;
+  text-decoration: underline;
 }

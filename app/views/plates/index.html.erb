@@ -13,7 +13,7 @@
       <th>Price</th>
       <th>Prepare time</th>
       <th>Ingredients</th>
-      <th class="btn">Actions</th>
+      <th class="actions">Actions</th>
     </tr>
   </thead>
 
@@ -28,7 +28,7 @@
         <p>- <%= ingredient.description %></p>
         <% end %>
       </td>
-      <td class="btn">
+      <td class="actions">
         <%= link_to 'Show', plate %>
         <%= link_to 'Edit', edit_plate_path(plate) %>
         <%= link_to 'Destroy', plate, method: :delete, data: { confirm: 'Are you sure?' } %>
