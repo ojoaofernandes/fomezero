@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: #BC2026;
+  position: relative;
+}
+
+nav a {
+  background-color: transparent;
+  color: #FFF;
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #C2363B;
+  color: #FFF;
+}
+
+nav a:focus,
+nav a:visited {
+  background-color: transparent;
+  color: #FFF;
+  text-decoration: none;
+}
+
+section {
+  float: left;
+  padding: 30px;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.right {
+  float: right;
+}
+
+.menu {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  display: inline;
+  line-height: inherit;
+}
+
+#restaurant {
+  width: 300px;
+}
+
+#plates {
+  width: 700px;
+}
